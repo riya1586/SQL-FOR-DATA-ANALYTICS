@@ -1,0 +1,502 @@
+
+
+
+🗺️ SQL Roadmap (Beginner to Advanced)
+
+
+📍 Level 1: SQL Basics (Week 1)
+
+Topic 1: Introduction
+
+1: What is Database?
+
+2: What is DBMS?
+
+3: What is RDBMS?
+
+4: what is SQL?
+
+
+
+Topic 2: Database Commands
+
+1: CREATE DATABASE
+
+2: DROP DATABASE
+
+3: ALTER DATABASE
+
+
+
+
+Topic 3: Data Types
+INTEGER
+
+. VARCHAR
+
+. CHAR
+
+. TEXT
+
+. DATE
+
+. BOOLEAN
+
+. DECIMAL
+
+
+
+
+Topic 4: Table Commands
+
+1: CREATE TABLE
+2: DROP TABLE
+3: ALTER TABLE
+4: TRUNCATE TABLE
+5: RENAME TABLE
+
+
+
+Topic 5: Constraints
+
+. PRIMARY KEY
+
+. FOREIGN KEY
+
+. NOT NULL
+
+. UNIQUE
+
+. CHECK
+
+. DEFAULT
+
+
+
+📍 Level 2: CRUD Operations (Week 2)
+
+. Insert Data
+. INSERT INTO
+. Read Data
+. SELECT
+. Update Data
+. UPDATE
+. Delete Data
+. DELETE
+. Practice:
+
+Student Table
+
+Employee Table
+
+Product Table
+
+
+
+📍 Level 3: Filtering Data
+Topics
+
+✔ WHERE
+
+✔ DISTINCT
+
+✔ LIMIT
+
+✔ ORDER BY
+
+✔ BETWEEN
+
+✔ IN
+
+✔ NOT IN
+
+✔ LIKE
+
+✔ IS NULL
+
+✔ IS NOT NULL
+
+--Example---
+
+SELECT *
+FROM Employee
+WHERE Salary > 50000;
+
+
+📍 Level 4: Operators
+
+. Arithmetic Operators
+
+. Comparison Operators
+
+. Logical Operators
+
+. AND
+
+. OR
+
+. NOT
+
+
+📍 Level 5: SQL Functions
+
+Numeric
+ABS()
+
+ROUND()
+
+CEIL()
+
+FLOOR()
+String
+UPPER()
+
+LOWER()
+
+INITCAP()
+
+LENGTH()
+
+TRIM()
+
+SUBSTRING()
+
+CONCAT()
+
+REPLACE()
+Date
+CURRENT_DATE
+
+CURRENT_TIME
+
+AGE()
+
+EXTRACT()
+
+DATE_PART()
+
+
+📍 Level 6: Aggregate Functions
+COUNT()
+
+SUM()
+
+AVG()
+
+MIN()
+
+MAX()
+
+
+--Example--
+
+SELECT AVG(Salary)
+FROM Employee;
+
+
+📍 Level 7: GROUP BY & HAVING
+
+. GROUP BY
+. HAVING
+
+
+--Example--
+
+SELECT Department,
+COUNT(*)
+FROM Employee
+GROUP BY Department;
+
+
+📍 Level 8: Joins ⭐⭐⭐
+
+. Must Learn
+
+. INNER JOIN
+
+. LEFT JOIN
+
+. RIGHT JOIN
+
+. FULL JOIN
+
+. SELF JOIN
+
+.CROSS JOIN
+
+--Practice on
+
+Customers
+
+Orders
+
+Products
+
+Employees
+
+Departments
+
+
+
+📍 Level 9: Subqueries
+
+Single Row Subquery
+
+Multiple Row Subquery
+
+Correlated Subquery
+
+Nested Query
+
+
+--Example--
+
+SELECT Name
+FROM Employee
+WHERE Salary >
+(
+SELECT AVG(Salary)
+FROM Employee
+);
+
+
+
+📍 Level 10: Set Operators
+
+. UNION
+
+. UNION ALL
+
+. INTERSECT
+
+. EXCEPT
+
+
+📍 Level 11: Views
+
+. CREATE VIEW
+
+. UPDATE VIEW
+
+. DROP VIEW
+
+
+📍 Level 12: Indexes
+
+. CREATE INDEX
+
+. DROP INDEX
+
+
+📍 Level 13: Sequences (PostgreSQL)
+
+. CREATE SEQUENCE
+
+. NEXTVAL()
+
+. CURRVAL()
+
+
+📍 Level 14: Transactions
+
+. BEGIN
+
+. COMMIT
+
+. ROLLBACK
+
+. SAVEPOINT
+
+
+📍 Level 15: Common Table Expressions (CTE)
+
+. WITH
+. Recursive CTE
+
+
+
+📍 Level 16: Window Functions ⭐⭐⭐⭐⭐
+
+. ROW_NUMBER()
+
+. RANK()
+
+. DENSE_RANK()
+
+. LEAD()
+
+. LAG()
+
+. FIRST_VALUE()
+
+. LAST_VALUE()
+
+. NTILE()
+
+
+📍 Level 17: Case Statement
+
+. CASE WHEN
+. THEN
+. ELSE
+. END
+
+
+📍 Level 18: PostgreSQL Special Topics
+
+. SERIAL
+
+. IDENTITY
+
+. ARRAY
+
+. JSON
+
+. JSONB
+
+. UUID
+
+. ENUM
+
+. COPY Command
+
+
+
+📍 Level 19: Stored Procedures & Functions
+
+. CREATE FUNCTION
+
+. CREATE PROCEDURE
+
+. Parameters
+
+. Return Types
+
+
+
+📍 Level 20: Triggers
+
+. BEFORE INSERT
+
+. AFTER INSERT
+
+. BEFORE UPDATE
+
+. AFTER UPDATE
+
+. DELETE Trigger
+
+
+📍 Level 21: Real Projects ⭐⭐⭐⭐⭐
+
+. Project 1
+
+ Hotel Booking System
+
+. Project 2
+
+ Online Shopping Database
+
+. Project 3
+
+ Library Management
+
+. Project 4
+
+ Online Exam System
+
+. Project 5
+
+ Employee Payroll
+
+. Project 6
+
+ Hospital Management
+
+. Project 7
+
+ Food Delivery Database
+
+. Project 8
+
+ Banking System
+
+
+
+📍 Level 22: Interview Questions
+Practice
+
+100 Basic SQL Questions
+
+100 Intermediate SQL Questions
+
+100 Advanced SQL Questions
+
+Joins
+
+Window Functions
+
+CTE
+
+Subqueries
+
+Case Study Questions
+
+
+
+📍 Level 23: GitHub Portfolio
+Upload:
+
+SQL Practice Queries
+
+PostgreSQL Projects
+
+README.md
+
+ER Diagram
+
+Screenshots
+
+Project Report
+
+
+
+📍 Level 24: Data Analyst SQL (Most Important)
+Master these topics:
+
+Joins
+
+GROUP BY
+
+HAVING
+
+Window Functions
+
+CTE
+
+Subqueries
+
+CASE WHEN
+
+Aggregate Functions
+
+Date Functions
+
+String Functions
+
+Business Reporting Queries
+
+
+
+🗓️ 8-Week Study Plan
+
+Week	Topics
+
+1	Basics, Database, Tables, Constraints
+2	CRUD, WHERE, ORDER BY, LIMIT, Operators
+3	Functions, Aggregate Functions, GROUP BY, HAVING
+4	Joins (all types) + Practice
+5	Subqueries, Set Operators, Views, Indexes
+6	Transactions, CTE, CASE, Window Functions
+7	PostgreSQL Advanced Topics, Procedures, Triggers
+8	then post git
